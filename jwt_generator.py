@@ -12,7 +12,7 @@ def generate_jwt():
         "sub": 456765445687,
         "aud": "https://coffeemesh.io/orders",
         "iat": now,
-        "exp": (now - timedelta(hours=24)).timestamp(),
+        "exp": (now + timedelta(hours=24)).timestamp(),
     }
 
     private_key_text = Path("private_key.pem").read_text()
