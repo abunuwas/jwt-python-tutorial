@@ -14,13 +14,13 @@ Access tokens are tokens which contain claims about the right of a user to acces
 
 The standard claims of an access token are:
 
-• `iss` (issuer): identifies the authorization server that issued the JWT.
-• `sub` (subject): identifies the subject of the JWT, i.e. the user sending the request to the server.
-• `aud` (audience): indicates the recipient for which the JWT is intended. This is our API server.
-• `exp` (expiration time): when the JWT expires.
-• `nbf` (not before time): time before which the JWT must not be accepted.
-• `iat` (issued at time): when the JWT was issued.
-• jti (JWT ID): a unique identifier for the JWT.
+- `iss` (issuer): identifies the authorization server that issued the JWT.
+- `sub` (subject): identifies the subject of the JWT, i.e. the user sending the request to the server.
+- `aud` (audience): indicates the recipient for which the JWT is intended. This is our API server.
+- `exp` (expiration time): when the JWT expires.
+- `nbf` (not before time): time before which the JWT must not be accepted.
+- `iat` (issued at time): when the JWT was issued.
+- jti (JWT ID): a unique identifier for the JWT.
 
 ### JWT signing algorithms
 
@@ -39,9 +39,9 @@ I also use Python's [cryptography library](https://github.com/pyca/cryptography)
 ### Additional resources
 
 Some of the articles and websites mentioned in the video are: 
-- The RFC "JSON Web Token (JWT)" (https://datatracker.ietf.org/doc/html/rfc7519). This is the reference for everything you want to know about JWTs.
-- [https://jwt.io](https://jwt.io). This website is great for inspecting and validating JWTs.
-- The RFC "The Base16, Base32, and Base64 Data Encodings" (https://datatracker.ietf.org/doc/html/rfc4648). This RFC describes how base encoding works, including base64url encoding, which is the type of encoding used for JWTs.
+- The RFC ["JSON Web Token (JWT)"](https://datatracker.ietf.org/doc/html/rfc7519). This is the reference for everything you want to know about JWTs.
+- https://jwt.io. This website is great for inspecting and validating JWTs.
+- The RFC ["The Base16, Base32, and Base64 Data Encodings"](https://datatracker.ietf.org/doc/html/rfc4648). This RFC describes how base encoding works, including base64url encoding, which is the type of encoding used for JWTs.
 - JWT claims website: https://www.iana.org/assignments/jwt/jwt.xhtml. This website contains the list of all standard claims you can find in JWTs.
 
 To learn more about JWTs, I also recommend Prabath Siriwardena's ["JWT, JWS and JWE for Not So Dummies! (Part I)"](https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3).
